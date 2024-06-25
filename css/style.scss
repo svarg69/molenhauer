@@ -11,6 +11,7 @@ body{
     color: #000000;
     font-size: 16px;
     line-height: 24px;
+    overflow-x: hidden;
     
 }
 
@@ -331,4 +332,36 @@ body{
                 }
             }
         }
+
+.services{
+    position: relative;
+    height: 1037px;
+    &:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: #06255b;
+        height: 100%;
+        width: 100%;
+        clip-path: polygon(0 0, 0% 116%, 67% 0);
+    }
+    &__decor{
+        position: absolute;
+        height: 714px;
+        width: 714px;
+        top: -360px;
+        right: -357px;
+        transform: rotate(-45deg);
+        background-color: #f7f9fc;
+        box-sizing: border-box;
+        
+    }
+    &__formula{
+        mix-blend-mode: darken;
+        
+        transform: rotate(45deg) translateX(170px) translateY(32px);
+
+    }
+}
 
